@@ -1,0 +1,21 @@
+Danh Sach Hang Hoa co ma so trong File: 
+=====================
+Ma So Hang Hoa: 5
+Ten Hang Hoa: NuocNgot
+Don Vi Tinh: Thung
+=====================
+Ma So Hang Hoa: 6
+Ten Hang Hoa: Duong
+Don Vi Tinh: Bich
+=====================
+Ma So Hang Hoa: 8
+Ten Hang Hoa: Botngot
+Don Vi Tinh: Bich
+=====================
+Ma So Hang Hoa: 1
+Ten Hang Hoa: Sua
+Don Vi Tinh: Thung
+=====================
+Ma So Hang Hoa: 6
+Ten Hang Hoa: Duong
+Don Vi Tinh: Bich

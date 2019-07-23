@@ -1,0 +1,41 @@
+Danh Sach Chung Tu co ma so trong File: 
+=====================
+Ma So Chung Tu: 2
+Ma So Nha Cung Cap: 1
+Ma So Hang Hoa: 2
+So Luong: 100
+=====================
+Ma So Chung Tu: 5
+Ma So Nha Cung Cap: 1
+Ma So Hang Hoa: 5
+So Luong: 20
+=====================
+Ma So Chung Tu: 8
+Ma So Nha Cung Cap: 1
+Ma So Hang Hoa: 1
+So Luong: 10
+=====================
+Ma So Chung Tu: 6
+Ma So Nha Cung Cap: 6
+Ma So Hang Hoa: 2
+So Luong: 80
+=====================
+Ma So Chung Tu: 9
+Ma So Nha Cung Cap: 6
+Ma So Hang Hoa: 4
+So Luong: 10
+=====================
+Ma So Chung Tu: 4
+Ma So Nha Cung Cap: 2
+Ma So Hang Hoa: 4
+So Luong: 60
+=====================
+Ma So Chung Tu: 7
+Ma So Nha Cung Cap: 3
+Ma So Hang Hoa: 4
+So Luong: 200
+=====================
+Ma So Chung Tu: 10
+Ma So Nha Cung Cap: 3
+Ma So Hang Hoa: 3
+So Luong: 20

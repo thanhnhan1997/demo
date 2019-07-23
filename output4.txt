@@ -1,0 +1,26 @@
+Thong Tin Chung Tu nhap hang co so luong > 50:
+====================
+Ma Chung Tu: 1
+Ma Nha Cung Cap: 4
+Ma Hang Hoa: 1
+So Luong: 150
+====================
+Ma Chung Tu: 2
+Ma Nha Cung Cap: 1
+Ma Hang Hoa: 2
+So Luong: 100
+====================
+Ma Chung Tu: 4
+Ma Nha Cung Cap: 2
+Ma Hang Hoa: 4
+So Luong: 60
+====================
+Ma Chung Tu: 6
+Ma Nha Cung Cap: 6
+Ma Hang Hoa: 2
+So Luong: 80
+====================
+Ma Chung Tu: 7
+Ma Nha Cung Cap: 3
+Ma Hang Hoa: 4
+So Luong: 200
