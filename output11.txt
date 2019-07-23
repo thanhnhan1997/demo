@@ -1,5 +1,0 @@
-Danh Sach Cac Chung Tu co So Luong Nhap Kho Lon Nhat: 
-===================
-Ma So Chung Tu: 7
-Ma So Nha Cung Cap: 3
-Ma So Hang Hoa: 4
