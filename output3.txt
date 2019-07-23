@@ -1,9 +1,0 @@
-Thong Tin Chung Tu cua Nha Cung Cap co ma la 6:
-====================
-Ma Chung Tu: 6
-Ma Hang Hoa: 2
-So Luong: 80
-====================
-Ma Chung Tu: 9
-Ma Hang Hoa: 4
-So Luong: 10
