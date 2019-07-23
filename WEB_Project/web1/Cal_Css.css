@@ -1,0 +1,74 @@
+body{
+    background-color: blanchedalmond;
+}
+
+#textField{
+    border: 1px solid violet;
+    font-size: 80px;
+    text-align: right;
+    height: 100px;
+    margin-bottom: 0;
+}
+* {
+    box-sizing: border-box;
+  }
+
+#num{
+        font-size: 200%;
+       
+}
+
+#opBtn, #numBtn, #memoryBtn{
+    float: left;
+}
+
+#btnCal,#btnPlus, #btnMinus, #btnTimes, #btnDivide, #btnPercent, #btnPraction, #btnNeg, #btnSqrt, #btnC, #btnDot, #btnCE{
+    font-size: 80px;
+    width: 160px;
+    background-color: cyan;
+    text-align: center;
+}
+
+#btnBack{
+    font-size: 50px;
+    width: 345px;
+    height: 98px;
+    background-color: cyan;
+    text-align: center;
+}
+
+#memoryField{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 80px;
+    height: 98px;
+    width: 345px;
+    background-color: red;
+    text-align: center;
+}
+
+#btnMS, #btnMR, #btnMP, #btnMC{
+    font-size: 80px;
+    width: 170px;
+    background-color: red;
+    text-align: center;
+
+}
+
+#num1, #num2, #num3, #num4, #num5, #num6, #num7, #num8, #num9, #num0 {
+    font-size: 80px;
+    width: 160px;
+    background-color: cadetblue;
+}
+
+@media screen and (max-width: 824px) {
+    #opBtn, #numBtn, #memoryBtn {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    #opBtn, #memoryBtn{
+        margin-top: 20px; 
+    }
+}
+
+
+

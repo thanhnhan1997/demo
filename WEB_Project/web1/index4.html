@@ -1,0 +1,225 @@
+<html>
+<head>
+<title>BTTH_JAVASCRIPT</title>
+<script src="js/jquery-3.4.1.min.js"></script>
+<style>
+    .important{
+        background-color: yellow;
+        width: 300px;
+        height: 150px;
+    }
+
+    #flip{
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+    }
+
+    #panel{
+        padding: 50px;
+        display: none;
+        background-color: yellow;
+    }
+
+</style>
+</head>
+<body>
+    <input id="txtName"><br>
+    <input id="txtAge"> <br>
+    <button onclick="display()">Show</button>
+    <hr>
+    <button onclick="Show()">Click Me</button>
+    <div id = "table"> </div>
+    <hr>
+    <button id="change">Click</button>
+    <h1>JQuery</h1>
+    <div>ghgfhfgghgfhgfhhfghfgggggggggggggggggggggggggggggggggggggggggghgfh
+    </div>
+    <hr>
+    <p id ="test">This is some <b>bold</b> text in paragraph.</p>
+    <button id="btn1">Show Test</button>
+    <button id="btn2">Show HTML</button>
+    <hr>
+    Name: <input type="text" id="textField" value="Thanh Nhan">
+    <button id="btn3">Show Value</button>
+    <hr>
+    <p><a href="http://greenacademy.com.vn" id="git">Green Academy</a></p>
+    <button id="btn4">Show Href Value</button>
+    <hr>
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p>
+    <table id="tbDemo" border="1px solid black" width="100%">
+        <tr>
+            <td colspan="3" style="text-align: center">DANH SACH SINH VIEN</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">MA SV</td>
+            <td style="text-align: center">HO Ten</td>
+            <td style="text-align: center">Lop</td>
+        </tr>
+    </table>
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+    </ol>
+    <button id="btn5">Append Test</button>
+    <button id="btn6">Append List Item</button>
+    <button id="btn7">Append Table Value</button>
+    <hr>
+    <div id="flip">Click here to Slide down panel</div>
+    <div id="panel">
+        <table id="tbDemo1" border="1px solid black" width="100%">
+                    <tr>
+                        <td id="ftitle" colspan="2" style="text-align: center">FORM Dang Nhap</td>
+                    </tr>
+                    <tr>
+                        <td id="fUsername" style="text-align: center">Ten Dang Nhap</td>
+                        <td><input id="txtUsername" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td id="fpass" style="text-align: center">Mat Khau</td>
+                        <td><input id="txtPWD" type="password"></td>
+                    </tr>
+                    <tr id="lgCol">
+                        <td></td>
+                        <td><button id="LoginBtn">Nhap</button></td>
+                    </tr>
+        </table>
+
+    </div>
+
+</body>
+<script>
+        function display(){
+            var name = document.getElementById("txtName");
+            var age = document.getElementById("txtAge");
+            if(name !== "" && age !== ""){
+                document.write(name.value + " "+age.value);
+            }
+        }
+
+        var i, j;
+        function Show(){
+           var m = prompt("Nhap M","");
+           var n = prompt("Nhap N","");
+            var text = "<table border='1' width='100%'>";
+           if(m != undefined && n != undefined){
+                for(i = 1;i<=parseInt(m);i++){
+                    text += "<tr>";
+                    for(j = 1;j<= parseInt(n);j++){
+                        text += "<td style='text-align: center'>" + i +"-"+ j + "</td>";
+                    }    
+                    text += "</tr>";
+                }
+                text += "</table>";
+
+                document.getElementById("table").innerHTML = text;
+           }
+        }
+
+        function exe3(){
+            var maSV = prompt("Nhap Ma SV","");
+            var hoTen = prompt("Nhap Ho Ten", "");
+            var lop = prompt("Nhap Lop", "");
+            var text = "<table border='1' width='100%'>";
+                text += "<tr colspan = '3'>" +
+                "<td colspan = '3' style='text-align: center'>DANH SACH SINH VIEN</td>"
+                + " </tr>";
+                text += "<tr>" +
+                "<td style='text-align: center'>Ma Sv</td>"+
+                "<td style='text-align: center'>Ho Ten</td>"+
+                "<td style='text-align: center'>Lop</td>"
+                + " </tr>";
+            if(maSV != null && hoTen != null && lop != null){
+                text += "<tr>" +
+                "<td style='text-align: center'>"+maSV+"</td>"+
+                "<td style='text-align: center'>"+hoTen+"</td>"+
+                "<td style='text-align: center'>"+lop+"</td>"
+                + " </tr>";
+            }
+            text += "</table>";
+            document.getElementById("table1").innerHTML = text;
+        }
+
+        $("#change").click(function(){
+                $("div").toggleClass("important");
+        });
+
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("Text: " + $("#test").text());
+            });
+
+            $("#btn2").click(function(){
+                alert("HTML: " +$("#test").html());
+            });
+
+            $("#btn3").click(function(){
+                alert("Value: " + $("#textField").val());
+            });
+
+            $("#btn4").click(function(){
+                alert("Value: " + $("#git").attr("href"));
+            });
+
+            $("#btn5").click(function(){
+                $("p").append("<b>Append Text</b>");
+            });
+
+            $("#btn6").click(function(){
+                $("ol").append("<li>Append Item</li>")
+            });
+
+            $("#btn7").click(function(){
+                $("#tbDemo").before("Before");
+                var maSV = prompt("Nhap Ma SV","");
+                var hoTen = prompt("Nhap Ho Ten", "");
+                var lop = prompt("Nhap Lop", "");
+                if(maSV != null && hoTen != null && lop != null){
+                    var newCol = "<tr>"
+                         +"<td style='text-align: center'>"+maSV+"</td>"+
+                          "<td style='text-align: center'>"+hoTen+"</td>"+
+                          "<td style='text-align: center'>"+lop+"</td>"+
+                        "</tr>";
+                    $("#tbDemo").append(newCol);
+                    $("#tbDemo").after("After");        
+                }
+            });
+
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");         
+            });
+
+            $("#flip").click(function(){
+                var css = $("#panel").css("display");
+                if(css == "block"){
+                    $("#txtUsername").css("background-color","white");
+                    $("#txtPWD").css("background-color","white");
+                    $("#ftitle").html("FORM DANG NHAP");
+                    $("#fUsername").html("Ten Dang Nhap");
+                    $("#fpass").html("Mat Khau");
+                    $("#lgCol").show();
+                }
+            });
+
+            $("#LoginBtn").click(function(){
+                var txtUsername = $("#txtUsername").val();
+                var txtPWD = $("#txtPWD").val();
+                if(txtUsername !== "" && txtPWD !== ""){
+                    $("#txtUsername").attr("disabled","true");
+                    $("#txtPWD").attr("disabled","true");
+                    $("#txtUsername").css("background-color","yellow");
+                    $("#txtPWD").css("background-color","yellow");
+                    $("#ftitle").html("THONG TIN DANG NHAP");
+                    $("#fUsername").html("Username");
+                    $("#fpass").html("Passwords");
+                    $("#lgCol").hide();
+                }
+            });
+        });
+        
+</script>
+</html>

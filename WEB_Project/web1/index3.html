@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Demo Caculator</title>
+    <link href="Cal_Css.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+     <p id="textField">0</p>
+     <hr>
+     <div id ="numBtn">
+            <button id="num1" onclick="display('1')" onmouseover="mouseOverHandle('num1')" onmouseout="mouseOutHandle('num1')">1</button>
+            <button id="num2" onclick="display('2')" onmouseover="mouseOverHandle('num2')" onmouseout="mouseOutHandle('num2')">2</button>
+            <button id="num3" onclick="display('3')" onmouseover="mouseOverHandle('num3')" onmouseout="mouseOutHandle('num3')">3</button>
+            <br><br>
+            <button id="num4" onclick="display('4')" onmouseover="mouseOverHandle('num4')" onmouseout="mouseOutHandle('num4')">4</button>
+            <button id="num5" onclick="display('5')" onmouseover="mouseOverHandle('num5')" onmouseout="mouseOutHandle('num5')">5</button>
+            <button id="num6" onclick="display('6')" onmouseover="mouseOverHandle('num6')" onmouseout="mouseOutHandle('num6')">6</button>
+            <br><br>
+            <button id="num7" onclick="display('7')" onmouseover="mouseOverHandle('num7')" onmouseout="mouseOutHandle('num7')">7</button>
+            <button id="num8" onclick="display('8')" onmouseover="mouseOverHandle('num8')" onmouseout="mouseOutHandle('num8')">8</button>
+            <button id="num9" onclick="display('9')" onmouseover="mouseOverHandle('num9')" onmouseout="mouseOutHandle('num9')">9</button>
+            <br><br>
+            <button id="num0" onclick="display('0')" onmouseover="mouseOverHandle('num0')" onmouseout="mouseOutHandle('num0')">0</button>
+            <button id="btnDot" onclick="display('.')">.</button>
+            <button id="btnCal" onclick="display('=')">=</button>
+     </div>
+    <div id="opBtn">
+            <button id="btnPlus" onclick="display('+')">+</button>
+            <button id="btnPercent" onclick="display('%')">%</button>
+            <button id="btnC" onclick="clearAll()">C</button>
+            <br><br>
+            <button id="btnMinus" onclick="display('-')">-</button>
+            <button id="btnPraction" onclick="display('1/')">1/X</button>
+            <button id="btnCE" onclick="display('CE')">CE</button>
+            <br><br>
+            <button id="btnTimes" onclick="display('*')">*</button>
+            <button id="btnNeg" onclick="display('neg')">+/-</button>
+           
+            <br><br>
+            <button id="btnDivide" onclick="display('/')">/</button>
+            <button id="btnSqrt" onclick="display('sqrt')">Sqrt</button>
+            
+    </div>
+    <div id = "memoryBtn">
+        <button id="btnBack" onclick="display('B')">Backspace</button>
+        <br><br>
+        <p id="memoryField">0</p>
+        <br>
+        <button id="btnMS" onclick="display('MS')">MS</button>
+        <button id="btnMC" onclick="display('MC')" disabled>MC</button>
+        <br><br>
+        <button id="btnMR" onclick="display('MR')" disabled>MR</button>
+        <button id="btnMP" onclick="display('M+')">M+</button>       
+    </div>
+
+</body>
+<script src = "js/demo.js">
+</script>
+</html>

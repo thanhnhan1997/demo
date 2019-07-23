@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>INDEX</title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+</body>
+Nhập Số 1: <input id="value1">
+<br><br>
+Phép Tính: <select id="op">
+				<option value='1'>+</option>
+				<option value='2'>-</option>
+				<option value='3'>*</option>
+				<option value='4'>/</option>
+           </select>
+<br><br>
+Nhập Số 2: <input id="value2">
+<br><br>
+<button onclick="solve()">Solve</button>
+<hr>
+Kết quả: <p id="result"></p>
+<hr>
+<h1>What Can JavaScript Do?</h1>
+<p id = "exe1">JavaScript can change HTML content</p>
+<br>
+<button onclick="changeText()">Click Me!</button>
+<hr>
+<h1>JavaScript Can Change Images</h1>
+<img id = 'exe2' onclick="changeImage()" src="images/lightOff.png" name="h1" width ="180" height="180">
+<p>Click the light bulb to turn on/off the light.</p>
+<hr>
+<h1>What Can JavaScript Do?</h1>
+<p id="exe3">JavaScript can change the style of an HTML element.</p>
+<button onclick="changeText1()">Click Me!</button>
+<hr>
+<h1>JavaScript Can Validate Input</h1>
+<p>Please Input a number between 1 and 10</p>
+<input id ="exe4" onchange="te">
+<button onclick="validateNum()">Submit</button>
+<p id="exe4_mess"></p>
+<hr>
+<script src="js/demo.js"></script>
+<button onclick="change()">Click</button>
+
+
+<script>
+	function solve(){
+			var val1 = document.getElementById('value1').value;
+			var val2 = document.getElementById('value2').value;
+			var op = document.getElementById('op');
+			var kq;
+				
+			if(op.value == 1){
+				kq = parseInt(val1) + parseInt(val2);	
+			}else if(op.value == 2){
+				kq = val1 - val2;
+			}else if(op.value == 3){
+				kq = val1 * val2;
+			}else if(op.value == 4){
+				kq = val1 / val2;
+			}
+			document.getElementById('result').innerHTML = kq; 
+	}
+	
+	 var flag = 0;
+	function changeText(){
+		 if(flag == 0){
+			document.getElementById('exe1').innerHTML = "Hello JavaScript!";
+			flag = 1;
+		 }else{
+		    document.getElementById('exe1').innerHTML = "JavaScript can change HTML content";
+			flag = 0;
+		 }
+	}
+	
+	function changeImage(){
+			var image = document.getElementById('exe2');
+			if(image.name == "h1"){
+				image.src = "images/lightOn.png";
+				image.name = "h2";
+			} else {
+				image.src = "images/lightOff.png";
+				image.name = "h1";
+			
+			}
+	}
+	
+	var flag1 = 0;
+	function changeText1(){
+		var x = document.getElementById('exe3');
+		
+		if(flag1 == 0){
+			x.style.fontSize = "25px";
+			x.style.color = "red";
+			flag1 = 1;
+		 }else{
+		    x.style.fontSize = "16px";
+			x.style.color = "black";
+			flag1 = 0;
+		 }
+		
+	}
+	
+	function validateNum(){
+		var x, text;
+		x = document.getElementById('exe4').value;
+		
+		if(isNaN(x) || x < 1 || x > 10){
+			text = "Input not valid";
+		}
+		else{
+			text = "Input OK";
+		}
+		
+		document.getElementById('exe4_mess').innerHTML = text;
+	}
+	
+</script>
+</html>

@@ -1,0 +1,143 @@
+<html>
+<head>
+</head>
+<body>
+	<h1>JavaScript Variables</h1>
+	<p>In this example, x, y and z are variables</p>
+	<p id="exe1"></p>
+<hr>
+<p>Click the button to display an alert box:</p>
+<button onclick="myFunction()">Try It</button>
+<hr>
+<p>Click the button to display a confirm box.</p>
+<button onclick="myFunction1()">Try It</button>
+<p id = "exe2"></p>
+<hr>
+<p>Click the button to display an alert box:</p>
+<button onclick="myFunction2()">Try It</button>
+<p id = "exe3"></p>
+<hr>
+<p>Click the button to display an alert box:</p>
+<button onclick="myFunction3()">Try It</button>
+<hr>
+<p>Display "Good day!" if the hour is less than 18:00:</p>
+<button onclick="myFunction4()">Try It</button>
+<p id = "demo"></p>
+<hr>
+<p id = "demo1"></p>
+<hr>
+<p>Input your age and click the button:</p>
+<input id="age" value="18">
+<button onclick="validate()">Try It</button>
+<p id = "demo2"></p>
+<hr>
+<p>Click the button to loop through a block of code five times.</p>
+<button onclick="loop()">Try It</button>
+<p id = "demo3"></p>
+<hr>
+<p id = "demo4"></p>
+</body>
+<script>
+		var x = 5;
+		var y = 6;
+		var z = x + y;
+		document.getElementById('exe1').innerHTML = z;
+		
+		function myFunction(){
+			alert("I am in an alert Box!");
+		}
+		
+		function myFunction1(){
+			var x;
+			if(confirm("Press a Button") == true){
+				x = "You pressed OK!";
+			} else {
+				x = "You pressed Cancel!";
+			}
+			
+			document.getElementById('exe2').innerHTML = x;
+		}
+		
+		function myFunction2(){
+			var person = prompt("Please Enter your name");
+			console.log(person)
+			if(person != null){
+				document.getElementById('exe3').innerHTML = "Hello " + person +"! How are you today?";
+			}
+		}
+		
+		function myFunction3(){
+			alert("Hello\nHow are you?");
+		}
+		
+		function myFunction4(){
+			var message;
+			if(new Date().getHours() < 18){
+				message= "Good Day!";
+			} else {
+				message = "Good Evening!";
+			}
+			
+			document.getElementById('demo').innerHTML = message;
+		}
+		
+		var day;
+		switch(new Date().getDay()){
+			case 0:{
+				day = "Sunday";
+				break;
+			}
+			case 1:{
+				day = "Monday";
+				break;
+			}
+			case 2:{
+				day = "Tuesday";
+				break;
+			}
+			case 3:{
+				day = "Wednesday";
+				break;
+			}
+			case 4:{
+				day = "Thursday";
+				break;
+			}
+			case 5:{
+				day = "Friday";
+				break;
+			}
+			case 6:{
+				day = "Satuday";
+				break;
+			}
+		}
+		
+		document.getElementById('demo1').innerHTML = "Today is " + day;
+		
+		function validate(){
+			var age, voteable;
+			age = document.getElementById('age').value;
+			voteable = (age < 18) ? "Too Young" : "Old enough";
+			document.getElementById('demo2').innerHTML = voteable;
+			
+		}
+		
+		function loop(){
+			var text = "";
+			var i;
+			for (i = 0;i < 50;i++){
+				text += "The number is " + i +"<br>";
+			}
+			document.getElementById('demo3').innerHTML = text;
+		}
+		
+		var txt = "";
+		var person = {fname:"John",lname:"Doe",age:25};
+		var x;
+		for(x in person){
+			txt += person[x] + " ";
+		}
+		document.getElementById('demo4').innerHTML = txt;
+</script>
+</html>
