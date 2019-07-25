@@ -1,1 +1,3 @@
 branch R-1.0.0
+
+git reset --hard HEAD~01
