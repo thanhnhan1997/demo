@@ -24,7 +24,7 @@
 
 </style>
 </head>
-<body>
+<body id="reg">
     <input id="txtName"><br>
     <input id="txtAge"> <br>
     <button onclick="display()">Show</button>
@@ -90,6 +90,8 @@
         </table>
 
     </div>
+	<hr>
+	<button id="rmBtn">Remove</button>
 
 </body>
 <script>
@@ -219,6 +221,10 @@
                     $("#lgCol").hide();
                 }
             });
+			
+			$("#rmBtn").click(function(){
+				$("#reg").remove();
+			});
         });
         
 </script>
