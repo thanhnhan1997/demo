@@ -4,3 +4,5 @@ version3
 
 
 --git clone 25/7/2019
+-- git branch <ten branch moi>
+-- git checkout <ten branch>
