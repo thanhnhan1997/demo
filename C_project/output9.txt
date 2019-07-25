@@ -1,6 +1,0 @@
-Danh Sach Chung Tu co ma so trong File voi so luong nhap lon hon so Luong: 
-=====================
-Ma So Chung Tu: 7
-Ma So Nha Cung Cap: 3
-Ma So Hang Hoa: 4
-So Luong: 200
