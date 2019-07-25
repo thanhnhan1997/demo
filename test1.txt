@@ -1,3 +1,15 @@
 branch R-1.0.0
 
 git reset --hard HEAD~01
+
+//dung tool get GITtotoise
+
+check modifie
+
+thay doi content cua file tren local
+
+//git checkout duong dan file
+git pull
+
+check modifiecation
+paste
